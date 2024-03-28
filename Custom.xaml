@@ -1,0 +1,73 @@
+<Border Margin="0,0,0,10" Padding="2,6" BorderThickness="1" Background="{DynamicResource ColorBrush5}" CornerRadius="5" BorderBrush="{DynamicResource ColorBrush3}" Opacity="0.7">
+ <Grid Margin="10,0,0,0">
+  <TextBlock x:Name="NewsHint" FontWeight="Bold" FontSize="10" Foreground="#FF000000">
+     本帮助页由 望舒 制作与维护。
+  </TextBlock>
+ </Grid>
+</Border>
+
+<local:MyCard Title="文档中提到的文件的下载网址" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="Java17的下载网址" />
+		<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="点击下载JAVA17" EventType="JAVA17" EventData="https://aka.ms/download-jdk/microsoft-jdk-17.0.10-windows-x64.msi/" />
+        <TextBlock TextWrapping="Wrap" Margin="0,10,0,10"
+                    Text="需要的注意事项" />
+		<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="你必须看的" EventType="弹出窗口" EventData="启动器的选择问题|由于启动器不会自行选择Java17启动mcp版。\n所以你需要将，版本设置内的java选择手动选择为java17，这样可以正确启动游戏。" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="常用网站" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+ <StackPanel Margin="25,40,23,15">
+  <local:MyListItem Margin="-5,0,-5,8"
+  Logo="https://cn.bing.com/favicon.ico"
+  Title="FPSMASTER官网" EventType="打开网页" EventData="https://fpsmaster.top/" Type="Clickable"/>
+  <local:MyListItem Margin="-5,0,-5,8"
+  Logo="https://www.baidu.com/favicon.ico"
+  Title="NE插件官网" EventType="打开网页" EventData="https://r0dog.top/" Type="Clickable"/>
+  <local:MyListItem Margin="-5,0,-5,8"
+  Logo="https://www.bilibili.com/favicon.ico"
+  Title="开发者B站主页" EventType="打开网页" EventData="https://space.bilibili.com/628246693" Type="Clickable"/>
+ </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="4399登录" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：为什么我的FPSMASTER没法进行4399登录" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：目前不支持4399登录，如果非要使用4399登录可以考虑转换成cookie登录" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="MCP版本的JAVA选择不正确导致的报错" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：为什么我的MCP版本的无法正常启动且错误日志中拥有java.lang.UnsupportedClassVersionError怎么办" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：换成java17启动游戏即可" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="怎样关闭客户端相关窗口" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：为什么我无法关闭客户端弹出的窗口？" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：请长按右键" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="进入花雨庭遇到的问题" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：为什么我出现无法进入服务器 身份验证服务器宕机等情况？" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：来到FPSMASTER的主界面登录你的账户几次，一般3-5次就应该好了 没好请询问他人" />
+	</StackPanel>
+</local:MyCard>
+
+
+
