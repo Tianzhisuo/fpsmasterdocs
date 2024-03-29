@@ -6,16 +6,20 @@
  </Grid>
 </Border>
 
-<local:MyCard Title="文档中提到的文件的下载网址" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+<local:MyCard Title="文档中提到的网址" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
 	<StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
                     Text="Java17的下载网址" />
 		<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="点击下载JAVA17" EventType="JAVA17" EventData="https://aka.ms/download-jdk/microsoft-jdk-17.0.10-windows-x64.msi/" />
+                    Text="点击会开始下载" EventType="打开网页" EventData="https://aka.ms/download-jdk/microsoft-jdk-17.0.10-windows-x64.msi/" />
+   <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="开发者的爱发电主页" />
+		<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="点击打开AFD" EventType="打开网页" EventData="https://afdian.net/a/fpsmaster" />
         <TextBlock TextWrapping="Wrap" Margin="0,10,0,10"
                     Text="需要的注意事项" />
 		<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="你必须看的" EventType="弹出窗口" EventData="启动器的选择问题|由于启动器不会自行选择Java17启动mcp版。\n所以你需要将，版本设置内的java选择手动选择为java17，这样可以正确启动游戏。" />
+                    Text="你必须看的" EventType="弹出窗口" EventData="启动器的选择问题|由于启动器不会自行选择Java17启动mcp版。\n所以你需要将版本设置内的java选择手动选择为java17，这样可以正确启动游戏。" />
 	</StackPanel>
 </local:MyCard>
 
@@ -69,5 +73,111 @@
 	</StackPanel>
 </local:MyCard>
 
+
+<local:MyCard Title="为什么没有花雨庭进服插件文件夹" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：为什么我的minecraft>versions>FPSMaster-1.12.2>FPSMaster 1.12.2>中没有plugins这个文件夹" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：请检查您的客户端版本，您可能使用了不受此插件支持的版本，此外1.8的插件是不可用状态【截至2024.3.25】【仅对公】" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="登录网易账户时遇到的问题" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：为什么我登录网易账户或添加角色出各种报错？" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：检查你的网易账号 是否被封禁 是否实名 是否风控
+如果在确定此三项一样都不占后请前往群聊求助 但如果发现你有上述三项任何一项，我将进行拉黑处理，你iq太低了
+" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="假防砍之类的问题" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：防砍不减速、无效怎么办？" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：关闭你的防止hyt误封功能 " />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="可能的饰品显示问题" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：为什么我的饰品是白的或者干脆就不显示" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：不显示的请尝试换成最新的MCP版 白的一般等一会就好了" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="旧版的代理插件导致的报错" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：为什么我在更新完毕FPSMASTER之后我进入花雨庭直接炸端了" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：如果你使用代理插件，那么请同时更新最新版的插件，否则会造成崩端" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="获取捐助者权限" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：我该怎样获取（拥有）捐助者【beta】版权限" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：使用您的浏览器打开开发者的爱发电来赞助120R的挡位即可获取，网址在此主页开头" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="怎样才能打开fpsmaster客户端的菜单" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：如何打开客户端菜单" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：请找到您键盘上的右shift 摁下即可" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="怎样处理遇到的全是挂逼和开端玩家" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：为什么我匹配的全都是那种奇怪的一看就知道是挂逼的玩意" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：他们没绕开端，你可以打开fpsmaster客户端菜单实用-倒数第二-hyt通信协议" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="组队如何使用" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：我想组队但跟forge版不一样没法加mod怎么办" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：/组队 玩家名 创建队伍并邀请玩家
+  /组队 邀请你的玩家名 接受组队邀请 【如果接受方是网易版请忽略该步骤】
+  /组队 解散 解散队伍
+" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="添加角色出现的报错" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：出现lndex 0 out of bounds for length 0报错怎么办？" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：因为你需要先添加角色，输入后点击加号" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="需要手动安装的代理插件" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="问：为什么我没FPSMASTER Proxy这个按钮" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="答：你需要手动安装此插件，前往插件官网下载插件，并在.minecraft>versions>FPSMaster-1.12.2>FPSMaster 1.12.2>plugins
+文件夹中放入ne-proxy.jar【网址在开头】
+" />
+	</StackPanel>
+</local:MyCard>
 
 
